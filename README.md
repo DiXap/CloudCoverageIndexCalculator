@@ -1,1 +1,3 @@
 # CloudCoverageIndexCalculator
+Uses:
+- pillow
