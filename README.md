@@ -76,17 +76,16 @@ where:
     | `--d`       | Display original image                        |
     | `--n`       | Process a night-time image                    |
 
-At any given time you can run:
-```shell
-$ python main.py --help
-```
-to see all available flags
+    At any given time you can pass the `--help` or `-h` to see all available flags:
+    ```shell
+    $ python main.py --help
+    ```
 
-So, for example, you can pass the following command:
+For example, you can pass the following command:
 ```shell
 $ python main.py /PATH/TO/IMAGE -s --w
 ```
-the program will show and write the image 
+and the program will show and write the image 
 <img src="./dump/11838-seg.jpg" alt="drawing" width="500"/>  
 > You can even try and pass all flags at the same time!
 
