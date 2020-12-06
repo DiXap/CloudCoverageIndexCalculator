@@ -1,4 +1,4 @@
-# CloudCoverageIndexCalculator
+# Cloud Coverage Index Calculator
 [![Generic badge](https://img.shields.io/badge/version-2.12.06-<COLOR>.svg)](https://shields.io/)
 [![Open Source Love png1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![Generic badge](https://img.shields.io/badge/contributors-2-blue)](https://shields.io/)  
@@ -90,7 +90,7 @@ and the program will show and write the image
 > You can even try and pass all flags at the same time!
 
 Regardless of your flag choices, the app will always display the CCI in your terrminal:
-```shell
+```
 $ python python main.py /PATH/TO/IMAGE -s --d --w
     CCI for image exmaple.jpg is X.XX%
 ```
@@ -111,7 +111,7 @@ $ python main.py /PATH/TO/IMAGE --n
 
 ## Tests
 
-These test cases were coded to demostrate functions' error handling.
+These test cases were coded to demostrate functions' error handling.  
 Feel free to play around with them at `tests.py`.
 
 
@@ -135,4 +135,4 @@ Alejandro Maldonado
 [![forthebadge powered-by-electricity](https://forthebadge.com/images/badges/powered-by-electricity.svg)](http://ForTheBadge.com)  
 
 ---
-[Go up](#weather-forecast-app)
+[Go up](#cloud-coverage-index-calculator)
