@@ -20,7 +20,7 @@
 
 # About the Project
 A basic cli app which allows you to calculate the *Cloud Coverage Index* given a sky image.  
-No need to worry for pre-processing the image!
+No need to worry for pre-processing!
 
 # Getting Started
 Since this app is all made with `Python` you're going to need some python-libraries and utilities listed below.
@@ -85,8 +85,10 @@ For example, you can pass the following command:
 ```shell
 $ python main.py /PATH/TO/IMAGE -s --w
 ```
-and the program will show and write the image 
+and the program will show and write the image  
+
 <img src="./dump/11838-seg.jpg" alt="drawing" width="500"/>  
+
 > You can even try and pass all flags at the same time!
 
 Regardless of your flag choices, the app will always display the CCI in your terrminal:

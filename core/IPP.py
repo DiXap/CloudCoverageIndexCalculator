@@ -23,6 +23,12 @@ class ImagePreProcesor():
 
 
     def display(self, image='clean', resolution = (1920,1080)):
+        """[summary]
+
+        Args:  
+            - image (str, optional): [description]. Defaults to 'clean'.  
+            - resolution (tuple, optional): [description]. Defaults to (1920,1080).
+        """
         img = self.fetchImageType(image)
         cv2.namedWindow('otput', cv2.WINDOW_AUTOSIZE)
         display = cv2.resize(img, resolution)
