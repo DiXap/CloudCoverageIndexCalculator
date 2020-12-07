@@ -1,5 +1,5 @@
 import core.ArgsParser as args
-from core.IPP import ImagePreProcesor as ip
+from core.IPP import ImagePreProcessor as ip
 
 def start():
     try:

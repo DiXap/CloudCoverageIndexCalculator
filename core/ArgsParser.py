@@ -1,12 +1,11 @@
 import click
-from .IPP import ImagePreProcesor
+from .IPP import ImagePreProcessor
 from .CCI import CloudCoverageIndex as cci
-
 
 
 def createIPP(**kwargs):
     path = '{0}'.format(kwargs['image'])
-    i = ImagePreProcesor(path)
+    i = ImagePreProcessor(path)
     wr = path.split('/')
     name = wr[-1].split('.')
     image_name = name[0]
@@ -15,7 +14,7 @@ def createIPP(**kwargs):
         i.process(night_shift=True)
     else:
         i.process()
-    
+
     if kwargs['s']:
         i.display(image='b&w')
     if kwargs['w']:
@@ -32,25 +31,25 @@ CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
 @click.command(context_settings= CONTEXT_SETTINGS)
 @click.version_option('2.12.06')
 @click.option(
-    '-s', 
-    is_flag=True,
-    help="Display processed image used to calculate CCI"
+'-s', 
+is_flag=True,
+help="Display processed image used to calculate CCI"
 )
 @click.option(
-    '--w', 
-    is_flag=True, 
-    help="Save a copy of the processed image"
+'--w', 
+is_flag=True, 
+help="Save a copy of the processed image"
 )
 @click.option(
-    '--d', 
-    is_flag=True, 
-    help="Display original image"
+'--d', 
+is_flag=True, 
+help="Display original image"
 )
 @click.option(
-    '--n', 
-    is_flag=True, 
-    help="Process a night-time image"
+'--n', 
+is_flag=True, 
+help="Process a night-time image"
 )
 @click.argument('image')
 def initialize(**kwargs):
-    createIPP(**kwargs)
+    createIPP(**kwargs)    

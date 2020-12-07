@@ -13,7 +13,7 @@
 * [Usage](#usage)  
     * [Night Mode](#night-mode)
     * [Tests](#tests)
-* [Contributing](#contributing)
+* [Documentation](#documentation)
 * [Contact](#contact)
 * [Acknowledgements](#Acknowledgements)
 
@@ -92,7 +92,7 @@ and the program will show and write the image
 > You can even try and pass all flags at the same time!
 
 Regardless of your flag choices, the app will always display the CCI in your terrminal:
-```clojure
+```script
 $ python python main.py /PATH/TO/IMAGE -s --d --w
     CCI for image exmaple.jpg is X.XX%
 ```
@@ -116,6 +116,9 @@ $ python main.py /PATH/TO/IMAGE --n
 These test cases were coded to demostrate functions' error handling.  
 Feel free to play around with them at `tests.py`.
 
+# Documentation
+
+All documentation was generated using `pydoc`. You'll find it inside `docs`.
 
 # Contact
 Diego J. Padilla  
