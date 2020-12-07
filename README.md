@@ -92,7 +92,7 @@ and the program will show and write the image
 > You can even try and pass all flags at the same time!
 
 Regardless of your flag choices, the app will always display the CCI in your terrminal:
-```
+```clojure
 $ python python main.py /PATH/TO/IMAGE -s --d --w
     CCI for image exmaple.jpg is X.XX%
 ```
