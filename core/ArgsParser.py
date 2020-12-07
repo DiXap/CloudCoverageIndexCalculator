@@ -24,7 +24,7 @@ def createIPP(**kwargs):
         i.display()
 
     clouds = cci(i.fetchImageType(type='b&w'))
-    print('\tCCI for image {} is {}%'.format(wr[-1], clouds.CCI()))
+    print('\tCCI for image {} is {} ({}%)'.format(wr[-1], clouds.CCI(), clouds.CCI(as_percentaje=True)))
 
 
 CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])

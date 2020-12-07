@@ -7,9 +7,11 @@ class CloudCoverageIndex():
         self.binary = processed_image
 
 
-    def CCI(self):
+    def CCI(self, as_percentaje=False):
         cci = self.getClouds() / self.__relevantArea()
-        return ny.round_(cci * 100, decimals=2)
+        if as_percentaje:
+            return ny.round_(cci * 100, decimals=2)
+        return cci
 
     def getClouds(self):
         clouds = cv2.countNonZero(self.binary)
