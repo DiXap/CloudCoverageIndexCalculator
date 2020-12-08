@@ -87,7 +87,7 @@ $ python main.py /PATH/TO/IMAGE -s --w
 ```
 and the program will show and write the image  
 
-<img src="./dump/11838-seg.jpg" alt="drawing" width="500"/>  
+<img src="./dump/11773-seg.jpg" alt="drawing" width="500"/>  
 
 > You can even try and pass all flags at the same time!
 
