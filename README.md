@@ -93,7 +93,7 @@ and the program will show and write the image
 
 Regardless of your flag choices, the app will always display the CCI in your terrminal:
 ```script
-$ python python main.py /PATH/TO/IMAGE -s --d --w
+$ python main.py /PATH/TO/IMAGE -s --d --w
     CCI for image exmaple.jpg is X.XX%
 ```
 
